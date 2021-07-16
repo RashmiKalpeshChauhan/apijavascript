@@ -1,0 +1,93 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1626437708.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"plateNo",
+			"driverName",
+			"lat",
+            "lng",
+            
+			"location",			
+			"lastUpdated"
+		],
+		"properties": {
+			"plateNo": {
+				"$id": "#root/items/plateNo", 
+				"title": "Plateno", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"X 19599"
+				],
+				"pattern": "^.*$"
+			},
+			"driverName": {
+				"$id": "#root/items/driverName", 
+				"title": "Drivername", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Wyatt Liam"
+				],
+				"pattern": "^.*$"
+			},
+			"lat": {
+				"$id": "#root/items/lat", 
+				"title": "Lat", 
+				"type": "number",
+				"examples": [
+					25.357119
+				],
+				"default": 0.0
+			},
+			"lng": {
+				"$id": "#root/items/lng", 
+				"title": "Lng", 
+				"type": "number",
+				"examples": [
+					55.391068
+				],
+				"default": 0.0
+			},
+			"location": {
+				"$id": "#root/items/location", 
+				"title": "Location", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Rolla, Sharjah, the UAE"
+				],
+				"pattern": "^.*$"
+			},
+			"imageURL": {
+				"$id": "#root/items/imageURL", 
+				"title": "Imageurl", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"https://i.picsum.photos/id/583/200/300.jpg"
+				],
+				"pattern": "^.*$"
+			},
+			"lastUpdated": {
+				"$id": "#root/items/lastUpdated", 
+				"title": "Lastupdated", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2021-07-15T23:09:27+00:00"
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+
+}
